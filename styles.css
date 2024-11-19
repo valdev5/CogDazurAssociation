@@ -212,8 +212,97 @@ body {
   .nav-links a:hover {
     color: #ffdd99; /* Couleur au survol */
   }
+  /* Container and Card Styles */
+/* Section Projects */
+#projects {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+  }
   
-
+  .projects-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 15px;
+  }
+  
+  .projects-container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .project-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .project-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .project-card-body {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Project Carousel Styles */
+  .project-carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 200px;
+  }
+  
+  .project-carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .project-carousel-images img {
+    min-width: 100%;
+    height: 209px;
+    
+  }
+  
+  .project-carousel-prev,
+  .project-carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  .project-carousel-prev {
+    left: 10px;
+  }
+  
+  .project-carousel-next {
+    right: 10px;
+  }
+  
+  .project-carousel-prev:hover,
+  .project-carousel-next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
 /* Section événement */
 .main-content {
     padding: 20px;
