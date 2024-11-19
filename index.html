@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cog d'Azur</title>
+    <link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.0/mdb.min.css"
+  rel="stylesheet"
+/>
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  rel="stylesheet"
+/>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Loader -->
+<div class="image-loader" id="loader">
+    <img src="./img/logo.png" alt="Loader Image">
+</div>
+    <header class="header">
+        <div class="header-container">
+          <div class="logo">
+            <img src="./img/logo.png" alt="Logo Cog d'Azur">
+          </div>
+          <h1 class="title">Cog d'Azur</h1>
+        </div>
+        <nav class="navigation">
+          <ul class="nav-links">
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#events">Événements</a></li>
+            <li><a href="#team">Équipe</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      
+    <div id="carouselExample" class="carousel slide" data-mdb-ride="carousel">
+        <!-- Indicateurs -->
+        <div class="carousel-indicators">
+          <button type="button" data-mdb-target="#carouselExample" data-mdb-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-mdb-target="#carouselExample" data-mdb-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-mdb-target="#carouselExample" data-mdb-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-mdb-target="#carouselExample" data-mdb-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-mdb-target="#carouselExample" data-mdb-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" data-mdb-target="#carouselExample" data-mdb-slide-to="5" aria-label="Slide 6"></button>
+          <button type="button" data-mdb-target="#carouselExample" data-mdb-slide-to="6" aria-label="Slide 7"></button>
+        </div>
+      
+        <!-- Slides -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./comment/1.png" class="d-block w-100" alt="Image 1">
+          </div>
+          <div class="carousel-item">
+            <img src="./comment/2.png" class="d-block w-100" alt="Image 2">
+          </div>
+          <div class="carousel-item">
+            <img src="./comment/3.png" class="d-block w-100" alt="Image 3">
+          </div>
+          <div class="carousel-item">
+            <img src="./comment/4.png" class="d-block w-100" alt="Image 4">
+          </div>
+          <div class="carousel-item">
+            <img src="./comment/5.png" class="d-block w-100" alt="Image 5">
+          </div>
+          <div class="carousel-item">
+            <img src="./comment/6.png" class="d-block w-100" alt="Image 6">
+          </div>
+          <div class="carousel-item">
+            <img src="./comment/7.png" class="d-block w-100" alt="Image 7">
+          </div>
+        </div>
+      
+        <!-- Flèche précédente -->
+        <button class="carousel-control-prev" type="button" data-mdb-target="#carouselExample" data-mdb-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Précédent</span>
+        </button>
+      
+        <!-- Flèche suivante -->
+        <button class="carousel-control-next" type="button" data-mdb-target="#carouselExample" data-mdb-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Suivant</span>
+        </button>
+      </div>
+      
+      
+      
+      <section class="presentation-section" id="about">
+        <div class="presentation-container">
+          <h2 class="presentation-title">À propos de nous</h2>
+          <p class="presentation-text">
+            <strong>Association des Sciences Cognitives de la Côte d’Azur</strong> 🧠🌴📚<br>
+            Organisation à but non lucratif dédiée à la promotion des sciences cognitives.
+          </p>
+          <div class="presentation-highlights">
+            <div class="highlight">
+              <span class="highlight-icon">☕️</span>
+              <p class="highlight-text">Café débat</p>
+            </div>
+            <div class="highlight">
+              <span class="highlight-icon">🔬</span>
+              <p class="highlight-text">Vulgarisation scientifique</p>
+            </div>
+            <div class="highlight">
+              <span class="highlight-icon">📖</span>
+              <p class="highlight-text">Tutorat</p>
+            </div>
+            <div class="highlight">
+              <span class="highlight-icon">🍸</span>
+              <p class="highlight-text">Afterworks</p>
+            </div>
+          </div>
+          <p class="presentation-text">
+            Rejoignez-nous et découvrez nos activités ! <a href="#contact" class="join-link">Inscription</a> 👇
+          </p>
+        </div>
+      </section>
+      
+    
+    <main class="main-content">
+        <!-- Section événement -->
+        <section class="event-section" id="events">
+            <div class="event-container">
+              <h2 class="event-title">Prochains Événements</h2>
+              <div class="event-card">
+                <div class="event-details">
+                  <h3 class="event-name">Café-Débat : Nicotine et Cerveau</h3>
+                  <p class="event-description">
+                    Découvrez comment la nicotine affecte nos émotions et notre motivation avec Jacques Barik, enseignant-chercheur.
+                  </p>
+                  <p class="event-date"><i class="far fa-calendar-alt"></i> Vendredi 29 novembre 2024 - 18H30</p>
+                  <p class="event-location">
+                    <i class="fas fa-map-marker-alt"></i> Café VersLibre, 34 Boulevard Stalingrad, Nice
+                  </p>
+                  <!-- Carte intégrée -->
+                  <div class="event-map">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2883.2062882912875!2d7.280622015492252!3d43.70011007912001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12cdd013f1d43989%3A0x9df76ab2723848f6!2s34%20Boulevard%20Stalingrad%2C%2006300%20Nice%2C%20France!5e0!3m2!1sen!2sfr!4v1690192908341!5m2!1sen!2sfr"
+                      width="100%"
+                      height="300"
+                      style="border:0;"
+                      allowfullscreen=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          <section class="team-section" id="team">
+            <h2 class="team-title">Notre Équipe</h2>
+            <div class="team-container">
+              <!-- Président(e) -->
+              <div class="team-member">
+                <img src="president.jpg" alt="Président(e)" class="team-photo">
+                <h3 class="team-name">Nom du Président(e)</h3>
+                <p class="team-role">Président(e)</p>
+              </div>
+              <!-- Vice-Président(e) -->
+              <div class="team-member">
+                <img src="vice_president.jpg" alt="Vice-Président(e)" class="team-photo">
+                <h3 class="team-name">Nom du Vice-Président(e)</h3>
+                <p class="team-role">Vice-Président(e)</p>
+              </div>
+              <!-- Secrétaire -->
+              <div class="team-member">
+                <img src="secretary.jpg" alt="Secrétaire" class="team-photo">
+                <h3 class="team-name">Nom du Secrétaire</h3>
+                <p class="team-role">Secrétaire</p>
+              </div>
+              <!-- Vice-Secrétaire -->
+              <div class="team-member">
+                <img src="vice_secretary.jpg" alt="Vice-Secrétaire" class="team-photo">
+                <h3 class="team-name">Nom du Vice-Secrétaire</h3>
+                <p class="team-role">Vice-Secrétaire</p>
+              </div>
+              <!-- Trésorier -->
+              <div class="team-member">
+                <img src="treasurer.jpg" alt="Trésorier" class="team-photo">
+                <h3 class="team-name">Nom du Trésorier</h3>
+                <p class="team-role">Trésorier</p>
+              </div>
+              <!-- Vice-Trésorier -->
+              <div class="team-member">
+                <img src="vice_treasurer.jpg" alt="Vice-Trésorier" class="team-photo">
+                <h3 class="team-name">Nom du Vice-Trésorier</h3>
+                <p class="team-role">Vice-Trésorier</p>
+              </div>
+              <!-- Responsable Pôle Événement -->
+              <div class="team-member">
+                <img src="event_manager.jpg" alt="Responsable Pôle Événement" class="team-photo">
+                <h3 class="team-name">Nom du Responsable</h3>
+                <p class="team-role">Responsable Pôle Événement</p>
+              </div>
+              <!-- Pôle Événement -->
+              <div class="team-member">
+                <img src="event_manager.jpg" alt="Pôle Événement" class="team-photo">
+                <h3 class="team-name">Nom du Responsable</h3>
+                <p class="team-role">Pôle Événement</p>
+              </div>
+              <!-- Pôle Partenariat -->
+              <div class="team-member">
+                <img src="event_manager.jpg" alt="Responsable Pôle Partenariat" class="team-photo">
+                <h3 class="team-name">Nom du Responsable</h3>
+                <p class="team-role">Pôle Partenariat</p>
+              </div>
+              <!-- Communication -->
+              <div class="team-member">
+                <img src="./img/staff-emilie.png" alt="Pôle Communication" class="team-photo">
+                <h3 class="team-name">Emilie Tavernier</h3>
+                <p class="team-role">Pôle Communication</p>
+              </div>
+            </div>
+          </section>
+          
+        <section class="join-us-section" id="contact">
+            <div class="join-container">
+              <h2 class="join-title">Nous Rejoindre</h2>
+              <p class="join-text">Suivez-nous sur Instagram ou contactez-nous directement par email.</p>
+              
+              <!-- Icône Instagram -->
+              <div class="social-links">
+                <a href="https://www.instagram.com/cogdazur/" target="_blank" class="social-link">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://linktr.ee/CogdAzur?fbclid=PAZXh0bgNhZW0CMTEAAaYbV8lV5z9YpBDRtnmwnX41ZbqkSMld425W-IFKCTn35ayBwbpHs5HKJbY_aem_ficPa6QYumV1ATUIj98cLw" class="social-link">
+                  <i class="fas fa-envelope"></i>
+                </a>
+              </div>
+          
+              <!-- Formulaire de contact -->
+              <form class="contact-form" action="votre_action_formulaire" method="POST">
+                <div class="form-group">
+                  <label for="name">Nom :</label>
+                  <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email :</label>
+                  <input type="email" id="email" name="email" placeholder="Votre email" required>
+                </div>
+                <div class="form-group">
+                  <label for="message">Message :</label>
+                  <textarea id="message" name="message" rows="4" placeholder="Votre message" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">Envoyer</button>
+              </form>
+            </div>
+          </section>
+          
+
+    </main>
+    
+    <footer class="footer">
+        <p>&copy; 2024 Cog d'Azur. Tous droits réservés.</p>
+    </footer>
+</body>
+<script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.0/mdb.min.js"
+></script>
+
+<script src="script.js"></script>
+</html>

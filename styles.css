@@ -1,0 +1,497 @@
+/* Style général */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fef4db;
+    color: #333;
+}
+
+/* En-tête */
+/* Header principal */
+.header {
+    background: linear-gradient(90deg, #043d5e, #4a75cf);
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Conteneur pour le logo et le titre */
+  .header-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  /* Loader */
+.image-loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.9); /* Couleur de fond */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    animation: fadeOut 3s ease-in forwards; /* Fait disparaître le loader après 3 secondes */
+}
+
+.image-loader img {
+    width: 100px; /* Taille de l'image */
+    animation: spin 2s linear infinite; /* Animation de rotation */
+}
+
+/* Animation de rotation */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Animation pour masquer le loader */
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+/* Afficher le contenu principal après l'animation */
+.image-loader + .main-content {
+    animation: showContent 3s ease-in forwards;
+}
+
+/* Animation pour afficher le contenu */
+@keyframes showContent {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        display: block;
+    }
+}
+  /* Logo */
+  .logo img {
+    width: 60px; /* Taille réduite pour un style moderne */
+    height: auto;
+    border-radius: 50%; /* Optionnel : arrondi du logo */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Titre */
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  /* Carte de l'événement */
+.event-map {
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden; /* Pour arrondir les bords de la carte */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre pour un effet moderne */
+  }
+  
+  .event-map iframe {
+    border: none; /* Supprime la bordure par défaut */
+  }
+  
+  /* Section Présentation */
+.presentation-section {
+    background: linear-gradient(135deg, #fef4db, #fff);
+    padding: 40px 20px;
+    text-align: center;
+    color: #333;
+  }
+  
+  .presentation-container {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .presentation-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #654321;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .presentation-text {
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  
+  .presentation-highlights {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 30px 0;
+  }
+  
+  .highlight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 150px;
+    height: 150px;
+  }
+  
+  .highlight-icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #f6ac4e; /* Orange */
+  }
+  
+  .highlight-text {
+    font-size: 16px;
+    font-weight: bold;
+    color: #654321; /* Marron */
+    text-transform: capitalize;
+    text-align: center;
+  }
+  
+  .join-link {
+    color: #f6ac4e;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .join-link:hover {
+    color: #e5943c; /* Orange foncé */
+  }
+  
+  /* Barre de navigation */
+  .navigation {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #ffdd99; /* Couleur au survol */
+  }
+  
+
+/* Section événement */
+.main-content {
+    padding: 20px;
+}
+
+.event-section {
+    text-align: center;
+    background-color: #f6ac4e; /* Orange */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.event-title {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.event-description {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.event-details, .event-date, .event-location {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.event-date {
+    font-weight: bold;
+}
+
+.event-location {
+    font-style: italic;
+}
+
+/* Pied de page */
+.footer {
+    text-align: center;
+    background: linear-gradient(90deg, #043d5e, #4a75cf);
+    color: #fff;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+}
+/* Section Présentation */
+.presentation-section {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+.presentation-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #654321; /* Marron foncé */
+}
+
+.presentation-text {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.presentation-list {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.presentation-list li {
+    font-size: 18px;
+    margin: 5px 0;
+    color: #f6ac4e; /* Orange */
+    font-weight: bold;
+}
+/* Section Notre Équipe */
+.team-section {
+    padding: 40px 20px;
+    background-color: #fef4db;
+    text-align: center;
+  }
+  
+  .team-title {
+    font-size: 28px;
+    color: #654321;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  
+  .team-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  /* Style des membres */
+  .team-member {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    max-width: 200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Animation au survol */
+  .team-member:hover {
+    transform: translateY(-10px) scale(1.05); /* Déplacement et agrandissement */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Ombre plus marquée */
+  }
+  
+  /* Style des photos */
+  .team-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Effet sur la photo au survol */
+  .team-member:hover .team-photo {
+    transform: rotate(-5deg) scale(1.1); /* Rotation légère et agrandissement */
+  }
+  
+  /* Texte */
+  .team-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0 5px;
+    color: #333;
+  }
+  
+  .team-role {
+    font-size: 16px;
+    color: #f6ac4e;
+  }
+  
+  
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  background-color: rgba(0, 0, 0, 0.8); /* Fond plus foncé au survol */
+}
+
+.carousel-control-prev-icon::before,
+.carousel-control-next-icon::before {
+  color: white; /* Couleur des flèches */
+  font-size: 18px;
+  font-weight: bold;
+}
+/* Section "Nous Rejoindre" */
+.join-us-section {
+    background: linear-gradient(135deg, #f6ac4e, #ffdd99); /* Dégradé moderne */
+    padding: 40px 20px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .join-container {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .join-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  .join-text {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #fff;
+  }
+  
+  /* Icônes réseaux sociaux */
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+  
+  .social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #333; /* Fond sombre */
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .social-link:hover {
+    background-color: #555;
+    transform: scale(1.1); /* Agrandissement au survol */
+  }
+  
+  /* Formulaire de contact */
+  .contact-form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    border-color: #f6ac4e;
+  }
+  
+  .submit-button {
+    display: block;
+    width: 100%;
+    background: #f6ac4e;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .submit-button:hover {
+    background: #e5943c;
+  }
+  
